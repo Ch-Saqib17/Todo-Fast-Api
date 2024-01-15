@@ -9,6 +9,7 @@ interface IData {
 
 const Baseurl = process.env.NEXT_PUBLIC_BASE_URL;
 
+
 const GetData = () => {
   const [data, setData] = useState<IData[]>([]);
 
@@ -53,12 +54,12 @@ const GetData = () => {
           <div className="text-lg md:flex-grow font-semibold mb-6 md:mb-0">
             {item.name}
           </div>
-          <div className="flex items-center mt-2">
+          <div className="flex items-center mt-2 ">
             <input
               type="text"
-              placeholder="Write Data"
+              placeholder="Write Text Here ....."
               onChange={(e) => updateData(item.id, e.target.value)}
-              className="border p-2 rounded mr-2 w-[200px]"
+              className="border p-2 rounded mr-2 w-[450px]"
             />
             <button
               className="bg-red-500 text-white px-4 py-2 rounded"
