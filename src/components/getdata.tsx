@@ -7,7 +7,7 @@ interface IData {
   name: string;
 }
 
-const Baseurl = "https://todo-fast-api.vercel.app";
+const Baseurl = "http://127.0.0.1:8000";
 
 
 const GetData = () => {
