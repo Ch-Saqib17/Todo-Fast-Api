@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "pip freeze -r requirements.txt && concurrently \"npm run next-dev\" \"npm run fast-dev\"",
-    "fast-dev": "uvicorn --app-dir api todo:app --reload",
+    "fastapi-dev": "pip3 install -r requirements.txt && python3 -m uvicorn api.index:app --reload",
+    "next-dev": "next dev",
+    "dev": "concurrently \"npm run next-dev\" \"npm run fastapi-dev\"",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "next-dev": "next dev"
+    "lint": "next lint"
+    
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
