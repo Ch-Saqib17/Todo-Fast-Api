@@ -2,7 +2,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 
-const Baseurl = "https://todo-fast-api.vercel.app/";
+const Baseurl = "https://todo-fast-api.vercel.app";
 
 const Adddata = () => {
   const [name, setName] = useState("");
