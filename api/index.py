@@ -86,3 +86,7 @@ def update_todo(todo_id: int, todo: TodoCreate, db: Session = Depends(get_db)):
     db.refresh(existing_todo)
 
     return existing_todo
+
+if __name__=="__main__":
+    import uvicorn
+    uvicorn.run("index:app",reload=True)
