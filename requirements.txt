@@ -3,5 +3,4 @@ uvicorn
 httpie
 requests
 httpx
-axios
-concurrently
+sqlalchemy
